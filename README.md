@@ -1,4 +1,4 @@
-# Based Cooking Website
+# FrenchmomSecrets Receipe Website
 
 [https://based.cooking](https://based.cooking)
 

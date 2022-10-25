@@ -1,5 +1,5 @@
 ---
-title: "🍲 Based Cooking 🍳"
+title: "🍲 FrenchMomSecrets receipes 🍳"
 description: 'The fast-loading recipe site with cooking only and no ads.'
 layout: single
 ---
@@ -70,16 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ## About this site
 
-Founded to provide a simple online cookbook without ads and obese web design.
-See the story of this site unfold in three videos:
+Created to provide a simple online cookbook. Most of these recipes come from people like you who have submitted their recipes to this website and others just like this one.
 
-- [A Demonstration of Modern Web Bloat](https://odysee.com/@Luke:7/a-demonstration-of-modern-web-bloat:f)
-- [The War Against Web Bloat Continues...](https://odysee.com/@Luke:7/the-war-against-web-bloat-continues...:a)
-- [SoyDevs DESTROYED Epic Style by Based Cooking!](https://odysee.com/@Luke:7/soydevs-destroyed-epic-style-by-based:6)
 
 ## It's easy to contribute!
 
-New recipes can be submitted [on Github](https://github.com/lukesmithxyz/based.cooking).
-We are funded by you only, not 20MB of ads or privacy-violating trackers per page.
+New recipes can be submitted [on Github](https://github.com/AerospaceEngineerBadAss/receipes).
+We are funded by you, so please free to contribute with a receipe or some crypto.
 
 {{< crypto >}}

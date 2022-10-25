@@ -1,9 +1,14 @@
-baseURL = 'https://based.cooking/'
+# Page settings
+
+baseURL = ""
 languageCode = 'en-us'
-title = 'Based Cooking'
+title = 'FrenchmomSecrets Receipes'
 theme = 'lugo'
+googleAnalytics = "UA-xxxxxxxx-y"
 
 [params]
+  author = "Alexey Mendieta"
+  description = "website for receipes"
   favicon = "/favicon.svg"
   stylesheet = "/style.css"
   indexarticles = 50
@@ -13,3 +18,4 @@ theme = 'lugo'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+theme = 'lugo'
