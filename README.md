@@ -1,6 +1,6 @@
 # FrenchmomSecrets Receipe Website
 
-[https://based.cooking](https://based.cooking)
+[https://food.frenchmomsecrets.com](https://food.frenchmomsecrets.com)
 
 This is a simple cooking website where users can submit recipes here for credit.
 There are no ads, trackers or cookies (unless recipes thereof).
