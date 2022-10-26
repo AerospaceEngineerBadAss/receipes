@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+<head>
+	<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
+	<link rel="canonical" href="{{ .Site.BaseURL }}">
+	<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
+	{{ end -}}
+	<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+	{{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
+	{{ end -}}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
+<body>
+{{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
+<main>
+	<header><div>
+<div><img loading="lazy" width=full height="1000" alt="Family photo shoot baby number two" src="https://frenchmomsecrets.com/wp-content/uploads/2019/02/DS09192015-068.jpg" style="object-position:34% 15%"  srcset="https://frenchmomsecrets.com/wp-content/uploads/2019/02/DS09192015-068.jpg 3278w, https://frenchmomsecrets.com/wp-content/uploads/2019/02/DS09192015-068-150x150.jpg 150w, https://frenchmomsecrets.com/wp-content/uploads/2019/02/DS09192015-068-300x300.jpg 300w, https://frenchmomsecrets.com/wp-content/uploads/2019/02/DS09192015-068-768x768.jpg 768w, https://frenchmomsecrets.com/wp-content/uploads/2019/02/DS09192015-068-1024x1024.jpg 1024w, https://frenchmomsecrets.com/wp-content/uploads/2019/02/DS09192015-068-100x100.jpg 100w" sizes="(max-width: 3278px) 100vw, 3278px"><div class="wp-block-cover__inner-container">
+<div class="wp-container-3 is-content-justification-space-between wp-elements-e19072c9c18ea39ff1728240cb7c84b7 wp-block-group alignwide has-background-color has-text-color has-link-color" style="padding-top1px;padding-right:0px;padding-bottom:0rem;padding-left:0px"><div class="wp-block-site-logo"><a href="https://frenchmomsecrets.com/" class="custom-logo-link" rel="home" aria-current="page"><img loading="lazy" width="200" height="54" src="https://frenchmomsecrets.com/wp-content/uploads/2019/03/cropped-cropped-Logo-4-white-background.png" class="custom-logo" alt="FrenchMomSecrets"></a></div>
+
+	<h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
+<article>
+{{ block "main" . }}
+{{ .Content }}
+{{ end }}
+{{ if .Param "nextprev" }}{{ partial "nextprev.html" . -}}{{ end -}}
+{{ if .Param "taglist" }}{{ partial "taglist.html" . }}{{ end -}}
+</article>
+</main>
+{{ block "footer" . }}
+<footer>
+	<a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a>
+	{{- if .Param "showrss" }}<br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>{{ end }}
+</footer>
+{{ end }}
+</body>
+</html>
