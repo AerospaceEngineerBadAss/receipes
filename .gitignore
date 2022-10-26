@@ -1,4 +1,4 @@
-/themes/
+#/themes/ modified by alexey to save theme into github
 
 # Generated files by hugo
 /public/
